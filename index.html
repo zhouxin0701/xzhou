@@ -119,20 +119,27 @@
 <style>
     .container {
         display: flex;
-      flex:1;
         justify-content: center; /* 水平居中 */
     }
     
     .small-div {
+        display: flex;
+        justify-content: space-between; /* 两个元素之间有一定的空间 */
+        align-items: center; /* 垂直居中 */
         width: 250px; /* 设置 div 的宽度 */
         height: 200px; /* 设置 div 的高度 */
+    }
+    
+    .small-div script {
+        flex: 1; /* 元素平均占据可用空间 */
+        margin: 0 5px; /* 两个元素之间的间距 */
     }
 </style>
 
 <div class="container">
     <div class="small-div">
         <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=THUz_UOHyp-WkETyjXqT4y-g1O4AjS6oZSHvwXA1e98"></script>
-      <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=THUz_UOHyp-WkETyjXqT4y-g1O4AjS6oZSHvwXA1e98&cl=ffffff&w=a"></script>
+        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=THUz_UOHyp-WkETyjXqT4y-g1O4AjS6oZSHvwXA1e98&cl=ffffff&w=a"></script>
     </div>
 </div>
 
