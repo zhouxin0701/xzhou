@@ -117,21 +117,17 @@
         </ul>
 
 <style>
-    .map-container {
-        display: flex;
-      margin-top: 1px; /* 调整上方的边距 */
-    }
-    
-    .map-container > div {
-        flex: 1;
-        transform: scale(0.25);
+    #clstr_globe {
+        width: 400px; /* 设置组件的宽度 */
+        height: 300px; /* 设置组件的高度 */
+        position: absolute; /* 设置组件的定位方式为绝对定位 */
+        top: 100px; /* 设置组件距离顶部的位置 */
+        left: 200px; /* 设置组件距离左侧的位置 */
     }
 </style>
 
-<div class="map-container">
-    <div>
-        <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=THUz_UOHyp-WkETyjXqT4y-g1O4AjS6oZSHvwXA1e98"></script>
-    </div>
+<div>
+    <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=THUz_UOHyp-WkETyjXqT4y-g1O4AjS6oZSHvwXA1e98"></script>
 </div>
 
 
